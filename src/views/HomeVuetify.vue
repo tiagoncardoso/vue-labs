@@ -1,16 +1,16 @@
 <template>
-  <hello-world />
+    <hello-world />
 </template>
 
 <script lang="ts">
-import Vue from "vue";
-import HelloWorld from "../components/HelloWorld.vue";
+import Vue from "vue"
+import HelloWorld from "../components/HelloWorld.vue"
 
 export default Vue.extend({
-  name: "HomeVuetify",
+    name: "HomeVuetify",
 
-  components: {
-    HelloWorld,
-  },
-});
+    components: {
+        HelloWorld,
+    },
+})
 </script>
