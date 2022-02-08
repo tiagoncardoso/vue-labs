@@ -1,6 +1,6 @@
 import Vue from "vue"
 import VueRouter, { RouteConfig } from "vue-router"
-import HomeVuetify from "../views/HomeVuetify.vue"
+import AppHome from "../views/AppHome.vue"
 
 Vue.use(VueRouter)
 
@@ -8,7 +8,7 @@ const routes: Array<RouteConfig> = [
     {
         path: "/",
         name: "home",
-        component: HomeVuetify,
+        component: AppHome,
     },
     {
         path: "/about",

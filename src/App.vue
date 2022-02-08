@@ -8,6 +8,7 @@
                     contain
                     src="https://raw.githubusercontent.com/odb/official-bash-logo/master/assets/Logos/Icons/PNG/64x64.png"
                     transition="scale-transition"
+                    width="40"
                 />
 
                 <v-img
@@ -16,27 +17,27 @@
                     contain
                     min-width="200"
                     src="./assets/Root Cool Vue Labs.svg"
+                    width="400"
                 />
-
-                <v-spacer></v-spacer>
-
-                <v-btn href="" target="_blank" text>
-                    <span class="mr-2">Here we go</span>
-                    <v-icon>mdi-open-in-new</v-icon>
-                </v-btn>
             </div>
+
+            <v-spacer></v-spacer>
+
+            <v-btn href="#" target="_blank" text>
+                <span class="mr-2">Here we go</span>
+                <v-icon>mdi-open-in-new</v-icon>
+            </v-btn>
         </v-app-bar>
+
+        <v-main>
+            <router-view />
+        </v-main>
     </v-app>
 </template>
 
 <script lang="ts">
-import Vue from "vue"
+import { Component, Vue } from "vue-property-decorator"
 
-export default Vue.extend({
-    name: "App",
-
-    data: () => ({
-        //
-    }),
-})
+@Component
+export default class App extends Vue {}
 </script>
